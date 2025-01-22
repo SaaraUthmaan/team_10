@@ -2,3 +2,27 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.image-container {
+            display: flex;
+            justify-content: space-around; /* Ensures space between image pairs */
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+.image-pair {
+            position: relative;
+            width: 320px; /* Adjust based on image size */
+            height: 270px;
+            margin: 10px;
+        }
+.front-image {
+            position: relative;
+            z-index: 2;
+            left: 20px; /* Slight offset for overlapping effect */
+        }
+.back-image {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: 1;
+            opacity: 0.8;
